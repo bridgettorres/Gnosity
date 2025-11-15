@@ -33,7 +33,7 @@ const LoginSignup = () => {
             }
 
             {action === "Login" ?<div></div> :
-                <div className="forgot-password">Have an account? <span>Click Here!</span>
+                <div className="forgot-password">Have an account? <span onClick={()=>{setAction("Login")}}>Click Here!</span>
             </div>
 }
 
