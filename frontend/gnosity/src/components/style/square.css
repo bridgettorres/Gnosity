@@ -1,9 +1,13 @@
 .square {
-    width: 150vh;
+    width: 85vw;
+    /* Sets width to 85% of the viewport width */
     height: 90vh;
     display: flex;
     background-color: #272240;
     border-radius: 30px;
     margin: 40px auto;
     box-shadow: 0px 4px 16px 0px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

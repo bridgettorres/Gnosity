@@ -1,12 +1,11 @@
 .card {
     width: 474px;
-    height: 502px;
+    height: 474px;
     display: flex;
     flex-direction: column;
-    /*stacks children vertically*/
     background-color: #3C3A5C;
     border-radius: 20px;
-    margin: auto auto;
+    margin: 30px 30px;
     padding: 20px;
     border: 2px solid #9A5CFF;
 }
@@ -14,7 +13,7 @@
 .title {
     display: flex;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 24px;
     font-family: "Pixelify Sans", sans-serif;
     color: #EBCB85;
     text-shadow: 0 0 20px #EBCB85
@@ -24,7 +23,7 @@
 .content {
     display: flex;
     justify-content: center;
-    font-size: 6vw;
+    font-size: 36px;
     font-family: "JetBrains Mono", monospace;
     font-weight: 700;
     color: #CCCBD8;

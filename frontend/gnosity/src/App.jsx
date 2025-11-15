@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Background>
-        <Dashboard />
+        <LoginSignup />
       </Background>
 
     </div >
