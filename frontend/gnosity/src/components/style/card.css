@@ -13,10 +13,24 @@
     display: flex;
     justify-content: center;
     font-size: 8vw;
+    font-family: "Macondo Swash Caps", cursive;
+    color: #EBCB85;
+    text-shadow: 0 0 4px #ece1c9,
+        0 0 4px #ece1c9,
+        0 0 4px #ece1c9,
+        0 0 4px #ece1c9,
+        0 0 4px #ece1c9,
+        0 0 4px #ece1c9,
+        0 0 4px #ece1c9,
+        0 0 4px #ece1c9;
 }
+
 
 .content {
     display: flex;
     justify-content: center;
     font-size: 6vw;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    color: #CCCBD8;
 }
