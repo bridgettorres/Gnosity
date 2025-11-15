@@ -1,20 +1,40 @@
 .dashboard {
-    display: flex;
-    justify-content: space-around;
+    width: 85vw;
+    height: 90vh;
+    background-color: #272240;
+    border-radius: 30px;
+    margin: 40px auto;
+    box-shadow: 0px 4px 16px 0px #000000;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 32px;
+    box-sizing: border-box;
 }
+
+.dashboard #quest {
+    grid-row: span 2;
+    grid-column: 2;
+}
+
+.dashboard #profile {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.dashboard #stats {
+    grid-column: 1;
+    grid-row: 2;
+}
+
 
 .card {
-    height: 270px;
-    width: 300px;
-    margin: 16px;
+    height: 100%;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
 
-}
-
-#quest {
-    height: 600px;
-}
-
-.title {
-    font-size: 32px;
-}
 }
