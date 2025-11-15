@@ -87,3 +87,9 @@
     min-width: 474px;
 
 }
+
+.light {
+    background-image: linear-gradient(to bottom right, #A3A1FF, #E0DFE7);
+    color: #403d8e;
+    cursor: pointer;
+}
