@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style/card.css';
 import './style/signup.css';
 
 const LoginSignup = () => {
 
     const [action, setAction] = useState("Sign Up");
+    const navigate = useNavigate();
 
     return (
         <div className='card'>
@@ -33,13 +35,24 @@ const LoginSignup = () => {
             }
 
             {action === "Login" ?<div></div> :
-                <div className="forgot-password">Have an account? <span>Click Here!</span>
+                <div className="forgot-password">Have an account? <span onClick={()=>{setAction("Login")}}>Click Here!</span>
             </div>
-}
+            }
 
             <div className='submit-container'>
-                <div className={action === "Login"?"submit light":"submit"} onClick={()=>{setAction("Sign Up")}}>Sign Up</div>
-                <div className={action === "Sign Up"?"submit light":"submit"}onClick={()=>{setAction("Login")}}>Login</div>
+                <div className={action === "Login" ? "submit light" : "submit"}
+                    onClick={() => { setAction("Sign Up"); }}>Sign Up
+                </div>
+
+                <div className={action === "Sign Up" ? "submit light" : "submit"}
+                    onClick={() => {
+                        if (action !== "Login") {
+                            setAction("Login");
+                        } else {
+                            navigate('/');
+                        }
+                    }}>Login
+                </div>
             </div>
         </div>
     )
