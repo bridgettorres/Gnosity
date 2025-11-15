@@ -8,7 +8,7 @@ const LoginSignup = () => {
             <div className='subtext'>Are you ready to level up irl?</div>
             <div className='inputs'>
                 <div className='input'>
-                    <input type="text" placeholder='UserName' />
+                    <input type="text" placeholder='Username' />
                 </div>
                 <div className='input'>
                     <input type="email" placeholder='Email' />
@@ -17,11 +17,11 @@ const LoginSignup = () => {
                     <input type="password" placeholder='Password' />
                 </div>
             </div>
-            <div className="forgot-password">Lost Password? <span>Click Here!</span>
+            <div className="forgot-password">Already have an account? <span>Click Here!</span>
             </div>
             <div className='submit-container'>
                 <div className="submit">Sign Up</div>
-                <div className="submit">Sign Up</div>
+                <div className="submit">Login</div>
             </div>
         </div>
     )
