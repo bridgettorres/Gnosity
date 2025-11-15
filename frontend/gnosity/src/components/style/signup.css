@@ -81,3 +81,9 @@
     cursor: pointer;
     font-family: 'JetBrainsMono', monospace;
 }
+
+.card {
+    min-height: 474px;
+    min-width: 474px;
+
+}
