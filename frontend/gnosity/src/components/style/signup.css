@@ -5,7 +5,7 @@
     gap: 9px;
     width: 100%;
     margin-top: 30px;
-    color: #3c009d;
+    color: #a875fb;
     font-size: 25px;
     font-weight: 700;
 }
@@ -23,13 +23,14 @@
     margin: auto;
     width: 40vh;
     height: 8vh;
-    background: #efcece;
-    border-radius: 6px;
+    background: #3C3A5C;
+    border: 2px solid #9A5CFF;
+    border-radius: 30px;
 }
 
 .input input {
     height: 8vh;
-    width: 40vh;
+    width: 60vh;
     background: transparent;
     border: none;
     outline: none;
