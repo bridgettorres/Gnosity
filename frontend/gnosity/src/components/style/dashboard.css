@@ -1,0 +1,20 @@
+.dashboard {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    height: 270px;
+    width: 300px;
+    margin: 16px;
+
+}
+
+#quest {
+    height: 600px;
+}
+
+.title {
+    font-size: 32px;
+}
+}
