@@ -3,19 +3,18 @@ import "./style/dashboard.css";
 import QuestCard from "./QuestCard";
 import ProfileCard from "./profileCard";
 import LogoutButton from "./logout";
+import StatsCard from "./StatsCard";
 
 const Dashboard = () => {
   return (
-      <div className="dashboard-container">
+    <div className="dashboard-container">
       <LogoutButton />
       <div className="dashboard">
         <div className="card" id="profile">
           <div className="title">PROFILE</div>
-          <ProfileCard/>
+          <ProfileCard />
         </div>
-        <div className="card" id="stats">
-          <div className="title">STATS</div>
-        </div>
+        <StatsCard />
         <QuestCard />
         <div className="card" id="progress">
           <div className="title">PROGRESS</div>
