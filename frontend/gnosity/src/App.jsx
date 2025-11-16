@@ -7,7 +7,7 @@ import QuestModal from "./components/questModal";
 function App() {
   return (
     <div className="App">
-      <QuestModal />
+      <Dashboard />
     </div>
   );
 }
