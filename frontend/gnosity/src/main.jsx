@@ -4,10 +4,11 @@ import './index.css'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import LoginSignup from './components/signup.jsx';
+import Dashboard from './components/dashboard.jsx';
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>},
-  {path:"/login", element: <LoginSignup />},
+  {path:"/Dashboard", element: <Dashboard />},
 ]);
 
 createRoot(document.getElementById('root')).render(

@@ -55,3 +55,62 @@
   padding: 5px 10px;
   margin-right: 6px;
 }
+
+.btn-remove {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 160px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #403d8e;
+  background-image: linear-gradient(to bottom right, #EBCB85, #EBE7DF);
+}
+
+.btn-complete {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 160px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #403d8e;
+  background-image: linear-gradient(to bottom right, #EBCB85, #EBE7DF);
+}
+
+.buttonsquest {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.collapse-toggle {
+  margin-top: 12px;
+  background: transparent;
+  border: none;
+  font-family: "JetBrainsMono", monospace;
+  font-size: 22px;
+  width: 100%;
+  color: #cccbd8;
+  text-decoration: underline;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.collapse-toggle:focus {
+  outline: 2px solid #9a5cff;
+  outline-offset: 2px;
+}
+
+.collapsed-message {
+  margin-top: 20px;
+  font-family: "JetBrainsMono", monospace;
+  font-size: 20px;
+  color: #cccbd8;
+}
