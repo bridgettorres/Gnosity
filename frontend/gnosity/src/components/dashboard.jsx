@@ -4,6 +4,7 @@ import QuestCard from "./QuestCard";
 import ProfileCard from "./profileCard";
 import LogoutButton from "./logout";
 import StatsCard from "./StatsCard";
+import RankingCard from "./RankingCard";
 
 const Dashboard = () => {
   return (
@@ -19,9 +20,7 @@ const Dashboard = () => {
         <div className="card" id="progress">
           <div className="title">PROGRESS</div>
         </div>
-        <div className="card" id="ranking">
-          <div className="title">RANKING</div>
-        </div>
+        <RankingCard />
       </div>
     </div>
   );
