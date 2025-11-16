@@ -56,7 +56,7 @@ const ProfileCard = () => {
         </div>
 
         <div className="userContent">
-            <h3>Username</h3>
+            <h3>User1234</h3>
             <div className="progress-section">
               <span className="progress-bar"></span>
               <div className="exp">
