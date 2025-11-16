@@ -1,3 +1,8 @@
+.dashboard-container {
+    position: relative;
+    float: right;
+}
+
 .dashboard {
     width: 85vw;
     height: 90vh;

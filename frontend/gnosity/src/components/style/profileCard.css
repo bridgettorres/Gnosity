@@ -1,0 +1,173 @@
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.mascot-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    gap: 15px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.arrow-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    max-width: 60px;
+    flex-shrink: 0;
+}
+
+.arrow-wrapper.left {
+    justify-content: flex-end;
+}
+
+.arrow-wrapper.right {
+    justify-content: flex-start;
+}
+
+.mascot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    min-height: 150px;
+    max-height: 280px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.mascot-img {
+    max-width: 90%;
+    max-height: 90%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.mascot-img.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mascot-img.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.userContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.userContent h3 {
+    margin: 0;
+    color: #EBCB85;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.userContent p {
+    margin: 0;
+}
+
+.profile-btn{
+  padding: 0;              
+  border: none;
+  background: transparent; 
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.profile-btn img{
+  width: 50px;
+  height: 37px;
+}
+
+.profile-btn:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.profile-btn:focus {
+  outline: none;
+}
+
+.progress-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0 12px;
+    width: 100%;
+    min-width: 0;
+    align-items: start;
+}
+
+.progress-bar {
+    display: block;
+    height: 12px;
+    background-color: #2a2844;
+    border: 2px solid #9A5CFF;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    min-width: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.progress-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg, #9A5CFF, #EBCB85);
+    border-radius: 6px;
+}
+
+.exp {
+    margin: 0;
+    font-size: 14px;
+    color: #EBCB85;
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: "JetBrainsMono", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 50px;
+    flex-shrink: 0;
+    overflow: hidden;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    flex-direction: column;
+}
+
+.exp p {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
