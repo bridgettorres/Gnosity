@@ -49,7 +49,7 @@ const LoginSignup = () => {
                         if (action !== "Login") {
                             setAction("Login");
                         } else {
-                            navigate('/');
+                            navigate('/Dashboard');
                         }
                     }}>Login
                 </div>
