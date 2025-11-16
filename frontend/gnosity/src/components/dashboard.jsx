@@ -1,12 +1,14 @@
 import "./style/card.css";
 import "./style/dashboard.css";
 import QuestCard from "./QuestCard";
+import ProfileCard from "./profileCard";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
       <div className="card" id="profile">
         <div className="title">PROFILE</div>
+        <ProfileCard/>
       </div>
       <div className="card" id="stats">
         <div className="title">STATS</div>

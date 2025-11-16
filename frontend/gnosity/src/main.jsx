@@ -7,7 +7,7 @@ import LoginSignup from './components/signup.jsx';
 import Dashboard from './components/dashboard.jsx';
 
 const router = createBrowserRouter([
-  {path:"/", element: <LoginSignup/>},
+  {path:"/", element: <App/>},
   {path:"/Dashboard", element: <Dashboard />},
 ]);
 
