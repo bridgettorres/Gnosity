@@ -1,6 +1,6 @@
 import SkillsRadarChart from "./skillsRadarChart";
 
-const StatsCard = () => {
+const ProgressCard = () => {
   return (
     <div
       className="p-6 rounded-2xl"
@@ -16,4 +16,4 @@ const StatsCard = () => {
   );
 };
 
-export default StatsCard;
+export default ProgressCard;

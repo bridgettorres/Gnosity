@@ -1,7 +1,7 @@
 import "./style/card.css";
 import "./style/dashboard.css";
-import StatsCard from "./statsCard";
 import QuestCard from "./QuestCard";
+import ProgressCard from "./progressCard";
 
 const Dashboard = () => {
   return (
@@ -19,7 +19,7 @@ const Dashboard = () => {
       <div className="card" id="progress">
         <div className="title">PROGRESS</div>
         <div style={{ width: "100%", height: "260px", overflow: "hidden" }}>
-          <StatsCard />
+          <ProgressCard />
         </div>
       </div>
 
