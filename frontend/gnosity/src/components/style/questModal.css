@@ -1,0 +1,97 @@
+.card {
+  padding: 30px;
+  gap: 15px;
+  align-items: flex-start;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 35px;
+}
+
+.subtext {
+  display: flex;
+  align-items: start;
+  margin-top: 15px;
+  color: #cccbd8;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 700;
+  font-family: "JetBrainsMono", monospace;
+}
+
+.input {
+  margin-top: 10px;
+  color: #cccbd8;
+  width: 58vh;
+  height: 7vh;
+  padding: 10px 12px;
+  border: 2px solid #9a5cff;
+  border-radius: 20px;
+  font-size: 19px;
+  font-family: "JetBrainsMono", monospace;
+}
+
+::placeholder {
+  color: #cccbd8b7;
+  font-family: "JetBrainsMono", monospace;
+  text-align: left;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 17px;
+}
+
+.tag {
+  font-family: "JetBrainsMono", monospace;
+  padding: 7px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 17px;
+  color: #cccbd8;
+  border: 2px solid #6b4eff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tag:hover {
+  border-color: #8c73ff;
+  box-shadow: 0 0 6px #8c73ff;
+}
+
+.tag.selected {
+  background: #6b4eff;
+  color: #fff;
+  box-shadow: 0 0 12px #9373ff;
+}
+
+.submit-container {
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: 100% !important;
+  margin-top: 10px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 20px;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(to bottom right, #f5d68a, #b8964e);
+  box-shadow: 0 0 15px #ebcb85, 0 0 30px #ebcb85 inset;
+  color: #fff4d0;
+  text-shadow: 0 0 8px #ebcb85, 0 0 12px #ebcb85;
+}
