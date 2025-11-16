@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 const QuestCard = () => {
   const [isModalOpen, setIsModalOpen] = useState(false); // State to open/close the modal
   const [tasks, setTasks] = useState([]); // State to store tasks
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem("quests")) || [];
@@ -36,24 +37,48 @@ const QuestCard = () => {
     <div className="card" id="quest">
       <div className="title">QUEST</div>
 
-      <div className="tasks-list">
-        {tasks.map((task, index) => (
-          <div key={index} className="task-item">
-            <strong>{task.name}</strong> - {task.difficulty}
-            <div className="tags">
-              {task.tags.map((tag, i) => (
-                <span key={i} className="tag">
-                  {tag}
-                </span>
-              ))}
+      <button
+        className="collapse-toggle"
+        onClick={() => setIsCollapsed((prev) => !prev)}
+        type="button"
+      >
+        {isCollapsed ? "Show quests" : "Hide quests"}
+      </button>
+
+      {isCollapsed ? (
+        <div className="collapsed-message">Every step forward, no matter how small, is still progress!</div>
+      ) : (
+        <div className="tasks-list">
+          {tasks.map((task, index) => (
+            <div key={index} className="task-item">
+              <strong>{task.name}</strong> - {task.difficulty}
+              <div className="tags">
+                {task.tags.map((tag, i) => (
+                  <span key={i} className="tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="buttonsquest">
+                <button
+                  className="btn-remove"
+                  onClick={() => handleRemoveTask(index)}
+                  type="button"
+                >
+                  Remove
+                </button>
+                <button
+                  className="btn-complete"
+                  onClick={() => handleCompleteTask(index)}
+                  type="button"
+                >
+                  Complete
+                </button>
+              </div>
             </div>
-            <div class='buttonsquest'>
-              <button className='btn-remove' onClick={() => handleRemoveTask(index)}>Remove</button>
-              <button className='btn-complete' onClick={() => handleCompleteTask(index)}>Complete</button>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
 
       {/* Modal */}
       {isModalOpen && (
